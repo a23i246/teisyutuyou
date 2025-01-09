@@ -49,6 +49,8 @@ $menyu[2] = "各詳細";
 $menyu[3] = "所持金入力";
 $menyu[4] = "お金の使い方";
 $menyu[5] = "支払方法";
+$menyu[6] = "前期繰越";
+
 
 print "<form action=\"http://localhost/%e5%ae%b6%e8%a8%88%e7%b0%bf%e3%82%a2%e3%83%97%e3%83%aa%e7%94%a8/%e4%bb%8a%e6%97%a5%e3%81%ae%e5%ae%b6%e8%a8%88%e7%b0%bf%20var2.php\" method=\"post\"> \n";
 	print "日にち：\n";
@@ -102,6 +104,9 @@ print "<form action=\"http://localhost/%e5%ae%b6%e8%a8%88%e7%b0%bf%e3%82%a2%e3%8
 		}else if($value == "支払方法"){
 			header("Location:http://localhost/%e5%ae%b6%e8%a8%88%e7%b0%bf%e3%82%a2%e3%83%97%e3%83%aa%e7%94%a8/%e6%94%af%e6%89%95%e6%96%b9%e6%b3%95%e5%85%a5%e5%8a%9b.php");
 			exit();
+		}else if($value == "前期繰越"){
+			header("Location:http://localhost/%e5%ae%b6%e8%a8%88%e7%b0%bf%e3%82%a2%e3%83%97%e3%83%aa%e7%94%a8/%e5%89%8d%e6%9c%9f%e7%b9%b0%e8%b6%8a.php");
+			exit();
 		}
 
 	}
@@ -148,6 +153,9 @@ function write(){
 	print"追加しました。";
 }
 
+
+
+	
 ?>
 </body>
 </html>
