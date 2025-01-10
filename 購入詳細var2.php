@@ -103,6 +103,7 @@ function darete($ID1){
 		niti INTEGER(10),
 		product VARCHAR(10),
 		ways VARCHAR(10),
+		shops VARCHAR(30),
 		Names1 VARCHAR(30),
 		Yen1 INTEGER,
 		ID INTEGER)";
@@ -124,30 +125,6 @@ function darete($ID1){
             $num++;
         }
     }
-
-/*
-    $query = "SELECT * FROM copy1";
-    $stmt = $pdo->prepare($query);
-    $stmt -> execute();
-
-    while($info = $stmt -> fetch(PDO::FETCH_ASSOC)){
-        $day = $info["niti"];
-        $product = $info["product"];
-        $way1 = $info["ways"];
-        $name = $info["Names1"];
-        $yen = $info["Yen1"]; 
-        $ID = $info["ID"];
-        print"copy1{$name}";
-
-        $query = "INSERT INTO ss2(niti,product,ways,Names1,Yen1,ID) VALUES($day,'$product','$way1','$name',$yen,$ID)";
-        $stmt = $pdo->prepare($query);
-        $stmt -> execute();
-    }	
-    
-    $query = "DROP TABLE copy1";
-    $stmt = $pdo->prepare($query);
-    $stmt -> execute();
-    */
 }
 
 ?>
