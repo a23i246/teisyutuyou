@@ -1,7 +1,7 @@
 
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<head><h1>家計簿アプリ制作</h1>h1></head>
+<head><h1>家計簿アプリ制作</h1></head>
 <body>
    
 <img src="今日の家計簿使用例.png">
