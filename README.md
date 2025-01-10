@@ -1,7 +1,12 @@
-# 家計簿アプリ制作
+
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head><title># 家計簿アプリ制作</title></head>
+<body>
+   
 <img src="今日の家計簿使用例.png">
 
-このコードはMySQLの練習として作った家計簿を取るためのアプリです。
+<p>このコードはMySQLの練習として作った家計簿を取るためのアプリです。</p>
 一か月ごとにデータベース内の更新が必要です。
 個人で使うように制作しているので一部使いづらい部分があると思いますがご了承ください
 
@@ -34,6 +39,12 @@ Webにてlocalhost入力ファイルから　”今日の家計簿”　を起�
 
 
 １月１０日現在
+
+
+</body>
+</html>
+
+
 
 
 
