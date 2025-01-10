@@ -17,7 +17,7 @@
 ファイル内　htdocs内に　"家計簿アプリ用のファイル"　といったファイルを作りコードを保存。<br>
 XAMPPでApache MySQLを起動(start)<br>
 データベース　"kakeibo"　を作成。<br>
-Webにてlocalhost入力ファイルから　”今日の家計簿”　を起動。<br>
+Webにてlocalhostと入力ファイルから　”今日の家計簿”　を起動。<br>
 以上の事前作業が必要になります。<br></p>
 
 <p><h3>使用方法</h3>
