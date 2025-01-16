@@ -92,6 +92,7 @@ function darete($ID1){
         $name[$num100] = $info["Names1"];
         $yen[$num100] = $info["Yen1"]; 
         $ID[$num100] = $info["ID"];
+        $shops2[$num100]=$info["shops"];
         $num100++;
     }
 
@@ -99,7 +100,7 @@ function darete($ID1){
     $stmt = $pdo->prepare($query);
     $stmt -> execute();
 
-    $query = "CREATE TABLE ss2(
+    $query = "CREATE TABLE ss2(  
 		niti INTEGER(10),
 		product VARCHAR(10),
 		ways VARCHAR(10),
@@ -117,14 +118,16 @@ function darete($ID1){
         $way2=$way1[$i];
         $name1=$name[$i];
         $yen1=$yen[$i];
+        $shops=$shops2[$i];
 
         if($ID[$i]!=$ID1){
-            $query = "INSERT INTO ss2(niti,product,ways,shops,Names1,Yen1,ID) VALUES($day,'$product','$way1','$shops','$name',$yen,$num1)";
+            $query = "INSERT INTO ss2(niti,product,ways,shops,Names1,Yen1,ID) VALUES($day1,'$product1','$way2','$shops','$name1',$yen1,$num)";
             $stmt = $pdo->prepare($query);
             $stmt -> execute();	        
             $num++;
         }
     }
+
 }
 
 ?>
