@@ -49,22 +49,30 @@ while($info = $stmt -> fetch(PDO::FETCH_ASSOC)){
     }else if($info["ways"]=="引き出し"){
         $hikidasi = $info["ID"]-1;//調整用
     }
-
 }
 $state[$nums++] = "合計";
-$way[0] = "現金";
-$way[1] = "PayPay";
-$way[2] = "クレカ";
-$way[3] = "貯金";
-$way[4] = "その他";
-$way[5] = "合計";
+
+$query = "SELECT * FROM way_money";
+$stmt = $pdo->prepare($query);
+$stmt -> execute();    
+$nums2 = 0;
+while($info = $stmt -> fetch(PDO::FETCH_ASSOC)){
+	$way[$nums2] = $info['moneys'];
+    if($info['moneys'] == "現金"){
+        $gennkinn = $nums2;
+    }else if($info['moneys'] == "PayPay"){
+        $payPay = $nums2;
+    }else if($info['moneys'] == "クレカ"){
+        $kureka = $nums2;
+    }else if($info['moneys'] == "貯金"){
+        $tyokin_way = $nums2;
+    }
+    $nums2++;
+}
+$way[$nums2++] = "合計";
 
 $seeds = count($state);
 $ways = count($way);
-$gennkinn = 0;
-$payPay = 1;
-$tyokin_way = 3;
-$kureka = 2;
 
 $total1 = [];
 $total2 = [];
