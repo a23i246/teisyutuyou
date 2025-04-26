@@ -11,9 +11,10 @@
 個人で使うように制作しているので一部使いづらい部分があると思いますがご了承ください<br></p>
 
 <p><h3>アプリ使用には、</h3>
-一定期間の家計簿を制作する際の補助アプリです。<br>
+一か月の家計簿を制作する際の補助アプリです。<br>
 
 使用にはXAMPP Control Panel v3.2.4　をダウンロードし、
+<a href="https://www.apachefriends.org/jp/download.html">ダウンロードサイト</a>
 ファイル内　htdocs内に　"家計簿アプリ用のファイル"　といったファイルを作りコードを保存。<br>
 XAMPPでApache MySQLを起動(start)<br>
 データベース　"kakeibo"　を作成。<br>
