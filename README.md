@@ -21,6 +21,12 @@ Webにてlocalhostと入力ファイルから　”今日の家計簿”　を�
 
 <p><h3>使用方法について</h3>
 githubページにあるwordに詳しい使い方が載っていますので初めにご覧ください。
+</p>
+
+<p>
+  <h3>今後の目標</h3>
+  
+</p>
 
 <a href="https://github.com/a23i246/teisyutuyou.git">コードリンク</a><br>
 １月16日更新<br>
